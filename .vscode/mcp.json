@@ -1,0 +1,30 @@
+{
+	"servers": {
+		"tavily-search": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"-y",
+				"mcp-remote",
+				"https://mcp.tavily.com/mcp/?tavilyApiKey=tvly-mock-api-key"
+			]
+		},
+		"heroku": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"-y",
+				"@heroku/mcp-server"
+			],
+			"env": {
+				"HEROKU_API_KEY": "HRKU-mock-api-key"
+			}
+		},
+		"my-mcp-server-cd9d58d1": {
+			"type": "stdio",
+			"command": "/home/Desktop/splx/my_mcp/.venv/bin/python3",
+			"args": ["/home/Desktop/splx/my_mcp/local_mcp_server.py"]
+		}
+	},
+	"inputs": []
+}

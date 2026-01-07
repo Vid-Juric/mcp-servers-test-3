@@ -1,0 +1,25 @@
+{
+  "mcp": {
+    "servers": {
+      "issue-server": {
+        "type": "sse",
+        "url": "http://localhost:9999/mcp"
+      },
+      "Linear": {
+        "type": "sse",
+        "url": "https://mcp.linear.app/sse"
+      },
+      "exa": {
+        "type": "http",
+        "url": "https://mcp.exa.ai/mcp",
+        "headers": {
+          "Remove-Me": "Disable web_search_exa tool if you're just coding. To 100% call exa-code, say 'use exa-code'."
+        }
+      }
+    },
+    "theme": "light",
+    "debug": false,
+    "autoConnect": true,
+    "reconnectInterval": 5000
+  }
+}

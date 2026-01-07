@@ -1,0 +1,7 @@
+{
+    "editor.fontSize": 12,
+    "mcp": {
+        "theme": "dark", 
+        "debug": true
+    }
+}
